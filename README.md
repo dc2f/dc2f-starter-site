@@ -1,6 +1,6 @@
 # dc2f-starter-site
 
-Demo web site based on dc2f. This is a (very) opinionated starter package to 
+Demo web site based on [dc2f](https://github.com/dc2f/dc2f). This is a (very) opinionated starter package to 
 easily start off with creating a statically published app with dc2f.
 
 I also use it as an opportunity to document the steps necessary to 
