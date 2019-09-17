@@ -15,8 +15,13 @@ plugins {
 repositories {
     // Use jcenter for resolving dependencies.
     // You can declare any Maven/Ivy/file repository here.
+    mavenCentral()
+    maven("https://jitpack.io")
+    maven("https://oss.sonatype.org/content/groups/public/")
     jcenter()
 }
+
+val dc2fVersion = "0.2.0-SNAPSHOT"
 
 dependencies {
     // Align versions of all Kotlin components
@@ -24,6 +29,9 @@ dependencies {
 
     // Use the Kotlin JDK 8 standard library.
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+    implementation("com.dc2f:dc2f:$dc2fVersion")
+    implementation("com.dc2f:dc2f-common:$dc2fVersion")
+
 
     // Use the Kotlin test library.
     testImplementation("org.jetbrains.kotlin:kotlin-test")
