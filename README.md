@@ -6,6 +6,25 @@ easily start off with creating a statically published app with dc2f.
 I also use it as an opportunity to document the steps necessary to 
 start a new project from scratch.
 
+## Getting Started
+
+Just click the [Use this template](https://github.com/dc2f/dc2f-starter-site/generate) button and create a new repository.
+
+Afterwards clone your repository locally
+
+* Install a [Java SDK](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
+* Install [npm](https://www.npmjs.com/) (required for installing bulma).
+* Run `npm install` in the root directory.
+
+## Launching
+
+```bash
+./dc2f.sh serve
+```
+
+Visit: http://localhost:5050/
+
+
 # Steps - Starting from scratch.
 
 ## Gradle
@@ -130,11 +149,3 @@ $secondary: #97c965;
 ## JS
 
 create an empty file at `src/main/resources/theme/script/main.js`
-
-## Launching
-
-```bash
-./gradlew run --args=serve
-```
-
-Visit: http://localhost:5050/
