@@ -52,6 +52,22 @@ dependencies {
 }
 ```
 
+additionally for gradle continous build:
+
+```kotlin
+plugins {
+    // add ratpack plugin
+    id("io.ratpack.ratpack-java") version "1.7.5"
+}
+
+// flatten classes for continous build.
+if (gradle.startParameter.isContinuous) {
+    tasks.named<ratpack.gradle.continuous.RatpackContinuousRun>("run") {
+        flattenClassloaders = true
+    }
+}
+```
+
 **App.kt**
 
 ```kotlin
