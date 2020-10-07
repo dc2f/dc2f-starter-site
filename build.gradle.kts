@@ -30,7 +30,7 @@ if (gradle.startParameter.isContinuous) {
     }
 }
 
-val dc2fVersion = "0.2.3-SNAPSHOT"
+val dc2fVersion = "0.2.6-SNAPSHOT"
 
 tasks.withType<KotlinCompile> {
     sourceCompatibility = "1.8"

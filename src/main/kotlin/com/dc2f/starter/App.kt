@@ -18,7 +18,7 @@ fun main(args: Array<String>) =
         GeneratorDc2fConfig(
             contentDirectory = "web/content",
             staticDirectory = "web/static",
-            assetBaseDirectory = "src/main/resources/theme",
+            assetBaseDirectory = "src/main/resources",
             rootContentType = MyWebsite::class,
             theme = WebsiteTheme(),
             urlConfigFromRootContent = { it.config.url }
